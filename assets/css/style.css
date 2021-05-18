@@ -1,1 +1,351 @@
 @charset "utf-8";
+
+/* 全体 */
+.is-fullWidth {
+  width: 100%;
+}
+
+.is-halfWidth {
+  width: 50%;
+}
+
+.is-defaultText {
+  color: #949697;
+  font-size: 12px;
+}
+
+.mandatory {
+  color: #dd4b39;
+}
+
+.link-color {
+  color: #01a6a4;
+}
+
+.link-color:hover {
+  color: #01bfbd;
+}
+
+.button-init {
+  text-decoration: none;
+}
+
+.button {
+  padding: 13px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+  display: inline-block;
+  text-align: center;
+  transition: .3s;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* title */
+.wrap {
+  width: 100%;
+  padding: 32px 0;
+  background-color: #f2f6f7;
+}
+
+.inner {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.main-contents {
+  padding: 48px 64px;
+  margin-bottom: 32px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #545658;
+}
+
+.title__btn-contents {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.title__btn:last-child {
+  margin-left: 8px;
+}
+
+.facebook-btn {
+  color: #fff;
+  background-color: #3b5999;
+  border-color: #3b5999;
+}
+
+.facebook-btn:hover {
+  background-color: #344e87;
+  border-color: transparent;
+}
+
+.google-btn {
+  color: #dd4b39;
+  background-color: #fff;
+}
+
+.google-btn:hover {
+  background-color: #f7f7f7;
+}
+
+.title-text {
+  text-align: center;
+}
+
+.sub-title {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.sub-title p {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.sub-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  transform: translateY(-50%);
+  background-color: #ececec;
+}
+
+/* form */
+/* form 全体 */
+.input-init {
+  padding: 0;
+  appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.bottom-space {
+  margin-bottom: 20px;
+}
+
+.labels {
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: block;
+  color: #545658;
+}
+
+.input-area {
+  height: 36px;
+  width: 100%;
+  font-size: 13px;
+  padding: 5px;
+  line-height: 2;
+  color: #545658;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.input-area:focus {
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+}
+
+.gender-content input, .course input {
+  display: none;
+  /* 元のgenderのradioとcourseのcheckboxを非表示にするCSS */
+}
+
+/* name */
+.name-contents {
+  display: flex;
+}
+
+.name {
+  margin-left: 16px;
+}
+
+.name:first-child {
+  margin-left: 0;
+}
+
+/* gender */
+.gender-contents {
+  display: flex;
+  font-size: 16px;
+  color: #545658;
+}
+
+.gender-content {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.gender-content:first-child {
+  margin-left: 0;
+}
+
+.gender-content span {
+  padding: 3px 3px 3px 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.gender-content span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 14px;
+  width: 14px;
+  transform: translateY(-50%);
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.gender-input:checked + span::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background-color: #01bfbd;
+}
+
+/* from */
+.from-area {
+  position: relative;
+}
+
+.from-area::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  height: 5px;
+  width: 5px;
+  transform: rotate(45deg);
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.from-input:focus {
+  background-color: #fbfbfb;
+  border-color: #d9d9d9;
+  box-shadow: initial;
+}
+
+/* course */
+.course-contents {
+  margin-bottom: 10px;
+  color: #545658;
+  font-size: 16px;
+}
+
+.course-contents:last-child {
+  margin-bottom: 0;
+}
+
+.course-contents-text {
+  position: relative;
+  padding-left: 25px;
+}
+
+.course-contents-text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 15px;
+  width: 15px;
+  margin-top: -8px;
+  border: 1px solid #d9d9d9;
+}
+
+.course-contents input:checked + .course-contents-text::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  height: 16px;
+  width: 8px;
+  margin-top: -12px;
+  transform: rotate(45deg);
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+}
+
+/* remarks */
+.remarks .input-area {
+  height: 100px;
+}
+
+/* submit-btn */
+.submit-btn {
+  padding: 13px;
+  background-color: #01bfbd;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background-color: #01a6a4;
+}
+
+.submit-btn:active {
+  background-color: #fff;
+  color: #01a6a4;
+  border: 1px solid #d9d9d9;
+}
+
+/* agreement */
+.agreement {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+/* foot part */
+.foot-part {
+  text-align: center;
+}
+
+.foot-part p, .resend-mail {
+  font-size: 12px;
+  margin-bottom: 8px;
+  line-height: 16px;
+}
+
+.foot-part a:hover {
+  border-bottom: 1px solid #ececec;
+  border-bottom-color: #01bfbd;
+  box-sizing: border-box;
+}
+
+.resend-mail {
+  display: inline-block;
+}
